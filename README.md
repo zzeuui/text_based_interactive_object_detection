@@ -10,6 +10,9 @@ $ sudo apt-get install ros-$ROS_DISTRO-realsense2-description
 ### darknet_ros
 ```
 $ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
+OR if ros version is melodic
+$ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git --branch feature/ci-melodic-and-noetic
+
 $ catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
