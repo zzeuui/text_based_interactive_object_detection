@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+        <node pkg="3d" type="in_cmd.py" name="in_cmd" output="screen"/>
+        <node pkg="3d" type="show.py" name="show" output="screen"/>
+</launch>
+
