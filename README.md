@@ -1,18 +1,19 @@
 # text_based_interactive_object_detection
 
-## realsense camera
+## Environment
+### realsense camera
 ```
 $ sudo apt-get install ros-$ROS_DISTRO-realsense2-camera
 $ sudo apt-get install ros-$ROS_DISTRO-realsense2-description
 ```
 
-## darknet_ros
+### darknet_ros
 ```
 $ git clone --recursive https://github.com/leggedrobotics/darknet_ros.git
 $ catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
-## docker
+### docker
 ```
 $ xhost +local:docker
 $ docker run -it --gpus all --privileged -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -e "QT_X11_NO_MITSHM=1" <image>
